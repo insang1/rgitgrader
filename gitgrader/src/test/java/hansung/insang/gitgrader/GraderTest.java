@@ -44,4 +44,8 @@ public class GraderTest {
 		Grade g = Grader.calculate_grade(-20,-35);
 	}
 
+	public void test_calculate_grade8() {
+		Grade g = Grader.calculate_grade(0,0);
+		assertEquals(Grade.F, g);
+	}
 }
